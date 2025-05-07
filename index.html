@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Khetan Sports Foundation</title>
+  <style>
+     /* Brand colors */
+     .fa-facebook-f { color: #1877f2; }
+    .fa-instagram { color: #e1306c; }
+    .fa-youtube   { color: #ff0000; }
+    .fa-twitter   { color: #1da1f2; }
+    .fa-linkedin-in { color: #0a66c2; }
+    .fa-threads   { color: #000000; }
+
+    :root {
+      --primary-red: #005aa7;
+      --primary-blue: #ff0000;
+      
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: var(--white);
+      box-shadow: 0 120px 250px rgba(0, 0, 0, 0.1);
+      position: relative;
+      border-bottom: #111;
+     
+     
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex: 1;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    .menu-container {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      flex: 2;
+      justify-content: center; /* Centering nav links */
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--primary-blue);
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary-red);
+    }
+
+    .support-button {
+      display: flex;
+      justify-content: flex-end;
+      flex: 1;
+    }
+
+    .support-button a {
+      background-color: var(--primary-blue);
+      color: var(--white);
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      color: #ccc;
+    }
+
+    .support-button a:hover {
+      background-color: var(--primary-red);
+    }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle div {
+      width: 25px;
+      height: 3px;
+      background-color: var(--primary-blue);
+      margin: 5px 0;
+      transition: background-color 0.3s;
+    }
+
+    .menu-toggle:hover div {
+      background-color: var(--primary-red);
+    }
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+.dropdown-content a {
+  padding: 10px 20px;
+  text-align: left;
+  text-decoration: none;
+  color: var(--primary-blue);
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #f3f3f3;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+
+
+
+  /* Optional: fix dropdown styling in mobile */
+  .dropdown-content {
+    background-color: white; /* Ensure dropdown is also white */
+  }
+
+
+
+  @media (max-width: 768px) {
+  .menu-container {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: white; /* ✅ Add this line */
+    position: absolute;
+    top: 70px;
+    left: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px 0;
+    z-index: 10;
+    margin-top: 10px;
+  }
+
+  .menu-container.active {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .support-button {
+    margin-top: 10px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* Optional: fix dropdown styling in mobile */
+  .dropdown-content {
+    background-color: white; /* Ensure dropdown is also white */
+  }
+}
+
+    }
+    .hero-video {
+  position: relative;
+  width: 100%;
+  height: 60vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+.hero-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video fills the area like a background */
+  display: block;
+}
+
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+  </div>
+    
+  <div class="logo">
+    <div style="display: flex; align-items: center;">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwg16zlSbAzrQZ8bBXlAsOpZR2rtWkGbL8obZN1MaKIhsoXVak8ekk7pmYe_UL7daMGG1e720bk6A8u2EDDA5w4CiVYT0zLLsStfZ3jd8WLjDd2L0yZX0ybyGkziuGx4wOZrNkC89LL-faIjdEBZn-pomXAWSoWVZllYdbYE2TXe3lRpfo4OjtqdJhN0zP/s320/1000091265.png" alt="Khetan-Sports-Foundation" style="height: 70px;" />
+  </div>
+      <div style="margin-left: 15px; font-family: Oswald; font-size: 22px; line-height: 1.2;">
+       <strong> <div>KHETAN
+        SPORTS FOUNDATION</div></strong>
+      </div>
+    </div>
+  </div>
+    <div class="menu-toggle" id="menu-toggle">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="menu-container" id="menu-container">
+      <nav class="nav-links">
+        <a href="https://furniturespot.github.io/Khetan-Sports-Foundation">Home</a>
+        <div class="dropdown">
+          <a href="#">Who we are</a>
+          <div class="dropdown-content">
+            
+            <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/aboutksf.html">About KSF</a>
+            <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/our%20mission.html">Our Mission</a>
+            <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/our%20vision.html">Our Vision</a>
+            <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/our%20team.html">Organization Structure</a>
+            <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/ourpartners.html">Our Sponsors & Partners</a>
+          </div>
+        </div>
+        
+        <div class="dropdown">
+          <a href="#focus-area">Area of Focus </a>
+          <div class="dropdown-content">
+            <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/sports.html">Sports</a>
+            <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/campagins.html">CSR Activity</a>
+          </div>
+        </div>
+       
+       
+        <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/news.html">News</a>
+        <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/#impact">Impact</a>
+        <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/contact.html">Contact Us</a>
+      </nav>
+
+      <div class="support-button">
+        <a href="#">Support our Initiative</a>
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+  <section class="hero-video">
+    <video autoplay loop muted playsinline>
+      <source src="https://furniturespot.github.io/Khetan-Sports-Foundation/new.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+  
+  
+<style>
+  .hero-image {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 60vh;
+  display: block;
+  object-fit: cover;
+}
+
+</style>
+
+
+
+
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menuContainer = document.getElementById('menu-container');
+
+    toggle.addEventListener('click', () => {
+      menuContainer.classList.toggle('active');
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="about-section">
+  
+     <h1>
+        KHETAN SPORTS FOUNDATION
+      </h1>
+     <br> <p>
+        <strong>Khetan Sports Foundation (KSF)</strong> is a non-profit organization committed for transforming grassroots sports in Nepal. By supporting young athletes, especially from underrepresented communities, KSF promotes equal opportunity and inclusive growth. Through partnerships, training, and expert-led programs, we enable athletes to thrive on and off the field. Our mission is to build a strong sporting ecosystem driven by passion, discipline, and innovation.
+      </p>
+   
+  </section>
+  
+
+<style>
+  .about-section {
+    padding: 40px 20px;
+    text-align: justify;
+  }
+
+  .about-section h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+ 
+  }
+
+  .about-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    .about-section p {
+      max-width: 1000px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .about-section p {
+      max-width: 900px;
+    }
+  }
+</style>
+
+
+<style>
+  
+  .donate-btn {
+    background-color: #f34b4b; /* Red button background */
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s ease;
+    text-decoration: none;
+  }
+
+  .donate-btn:hover {
+    background-color: #d93b3b;
+  }
+</style>
+</head>
+<body>
+<center>
+<a href="https://furniturespot.github.io/Khetan-Sports-Foundation/aboutksf.html" class="donate-btn">
+  READ MORE →
+</a></center><BR><BR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="focus-area">
+  <h2>AREAS OF FOCUS</h2>
+  <h3 class="subtitle">We have directed our initiatives towards creating an impact in the sports ecosystem.</h3>
+
+  <div class="focus-cards">
+    <div class="card">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg32k5Od6ngDR5seX-kcR3Yn20tecf9E0Orii7NuhDW_MSOVRuodKUdBs85DWCpApWIHSJlEKOQA08sp5JYfpI-6SeOWsA025JJzyWJ7jl8KV_SjN7aDkq_AKD9k5xOW743S2KuX0ktSMYnqR_jyw3X9YG22MQpg9FsnerhICmM4CizXzpIsFy0tQVyJTy7/s320/1000090970.jpg" alt="Grassroots support">
+      <h3>Grassroots Development</h3>
+      <p>
+        We are working with academies to support grassroots athletes through targeted interventions that foster their holistic growth and help them achieve their sporting aspirations.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgr7k4rUWAnHKnOdkh9IVVRuKKYJShCevs7O07amg7-h4xVGNQdf8AroVjO2JcF6kd4j7aVYJIWLZvSMM-6dPUL3mZgRn3PUrMg-7XXPbo-XqY9cFfoONHbDyCerirmVsHQeYvQm-nZ55IbGOsMCmYl3fcu2fZTU0ipuXZJDzdFKtlIL0mcQFeT_DfT1R94/s320/1000090966.jpg" alt="Sports science">
+      <h3>Sports Science</h3>
+      <p>
+        We connect partner academies with sports science experts including coaches, nutritionists, and sports psychologists through dynamic workshops to enhance athlete performance.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWmYPbNkIsNZcOxq10awVRP0rvCrZYfSa7v4RxK7HoZgSOMlhv6L5uQmMtC8tX53Lg-KMTuDOznIGQQ_kdkjwPC0DvUWqru-9sMkIgLUR53Njyc5yN25CCNLN48QUebfHN81ijb1KTeQWSKcJID1VcK6X_R7Nd47p2Bm7KkhDl5HY_pZrvMv4zDQH9Bf_Z/s320/1000090968.jpg" alt="Women in sports">
+      <h3>Women in Sports</h3>
+      <p>
+        Empowering women in sports by breaking barriers of access and stereotypes across Nepal.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiP9biLkvFFbOlVsEQKN5rH7acKe56scczOkZYZbmehgtfgWtj8QPZ2fARktRlX7NWvL5WH_juqedOtVPAwtY-XWp357axnwNAIX4jA6TQSFAFMGMgkTot-9-RjRmam7tF1-gvNJVIByvEO397d4HVUPiP05tIUwDkIJ7VN4sUVBYLzWrk_bvY1ZHpnVoTu/s320/1000090972.jpg" alt="SAI partnership">
+      <h3>Sports Collaborations</h3>
+      <p>
+        We have collaborated with various National Sports Federations, offering support in sports science, equipment, expertise, technology, and research.
+      </p>
+    </div>
+  </div>
+</section>
+<style>
+  .focus-area {
+  padding: 40px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.focus-area h2 {
+  font-size: 2rem;
+  color: #0056a0;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.focus-area .line {
+  width: 30px;
+  height: 3px;
+  background: #0056a0;
+}
+
+.focus-area .subtitle {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.focus-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+  
+}
+
+
+
+.card {
+  background: #000b33;
+  color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 16px 0 10px;
+}
+
+.card p {
+  padding: 0 16px 20px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br>
+<section style="background-color: #050933; padding: 40px 20px;">
+  <div style="max-width: 1000px; margin: 0 auto; color: #ffffff;">
+    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px; text-align: justify;">
+      Our “Women in Sports” initiative supports girls and women across communities, fostering inclusivity and strength. We are deeply committed to supporting the cause by creating a platform that empowers women and girls to break barriers and achieve their fullest potential in the sporting world. Here’s how the foundation plays a crucial role in supporting this cause.
+    </p>
+   <center> <a href="#" style="display: inline-block; background-color: #ef3f45; color: #ffffff; padding: 12px 20px; text-decoration: none; font-weight: bold; font-size: 1rem; border-radius: 4px;">
+      DONATE US &nbsp; → 
+    </a></center>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 600px) {
+    section p {
+      font-size: 1rem !important;
+    }
+
+    section a {
+      font-size: 0.95rem !important;
+      padding: 10px 16px !important;
+    }
+  }
+</style>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Impact Section</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    .impact-section {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .impact-title {
+      font-size: 35px;
+      font-weight: bold;
+      color: #005aa7;
+      margin-bottom: 30px;
+
+      align-items: center;
+    }
+
+
+    .impact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .impact-box {
+      background: white;
+      border-radius: 12px;
+      padding: 30px 20px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .impact-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .impact-number {
+      font-size: 36px;
+      color: #ff0000;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .impact-text {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.5;
+      
+    }
+
+    @media (max-width: 600px) {
+      .impact-title {
+        font-size: 35px;
+        margin-bottom: 20px;
+      }
+
+      .impact-number {
+        font-size: 30px;
+      }
+
+      .impact-text {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="impact" id="impact">
+  <div class="impact-section">
+   <center> <h1 class="impact-title">IMPACT ACROSS NATION</h1></center><BR>
+    <div class="impact-grid">
+      <div class="impact-box">
+        <div class="impact-number" data-target="100">1</div>
+        <div class="impact-text">Sports Events supported throughout its inception.</div>
+      </div>
+      <div class="impact-box">
+        <div class="impact-number" data-target="500">1</div>
+        <div class="impact-text">National & International Players from Nepal covered through various campaigns.</div>
+      </div>
+      <div class="impact-box">
+        <div class="impact-number" data-target="30">1</div>
+        <div class="impact-text">Working with various District, State, National Sports Federations to support & promote sports in the country.</div>
+      </div>
+      <div class="impact-box">
+        <div class="impact-number" data-target="4">1</div>
+        <div class="impact-text">Working with Lions, Leo Welfare Clubs</div>
+      </div>
+      
+    </div>
+  </div>
+  <script>
+    const counters = document.querySelectorAll('.impact-number');
+  
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const speed = 50; // lower = faster
+  
+        const increment = Math.ceil(target / speed);
+  
+        if (count < target) {
+          counter.innerText = count + increment;
+          setTimeout(updateCount, 20);
+        } else {
+          counter.innerText = target + '+'; // Add + when finished
+        }
+      };
+  
+      updateCount();
+    });
+  </script>
+  
+</section>
+</body>
+</html>
+
+
+
+<!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" onclick="scrollToTop()">
+  ↑
+</button>
+
+<style>
+  #scrollToTopBtn {
+    position: fixed;
+    bottom: 30px; /* Appears above the footer */
+    right: 20px;
+    z-index: 1000;
+    background-color: #f00303;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    transition: background-color 0.3s ease;
+  }
+
+  #scrollToTopBtn:hover {
+    background-color: #555;
+  }
+</style>
+
+<script>
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+
+
+
+
+
+
+  <section class="partners" id="partners">
+<center>
+  <section class="partners-section">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Partners</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    .partners-section {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    h1 {
+          font-size: 2em;
+          font-weight: bold;
+          margin-bottom: 10px;
+          color: #005aa7;
+        }
+
+    .partners-title {
+      font-size: 32px;
+      font-weight: bold;
+      color: #005aa7;
+      margin-bottom: 40px;
+    }
+
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+      gap: 25px;
+    }
+
+    .logo-box {
+      background: #fff;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+      width: 120px;
+      height: 120px;
+    }
+
+    .logo-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .logo-box img {
+      max-width: 100%;
+      max-height: 100px;
+      object-fit: contain;
+    }
+
+    @media (max-width: 768px) {
+  .logo-grid {
+    
+    justify-items: center;
+  }
+
+  .logo-box img {
+    max-height: 120px;
+  }
+  h1 {
+          font-size: 2em;
+          font-weight: bold;
+          margin-bottom: 10px;
+          color: #005aa7;
+        }
+}
+
+  </style>
+</head>
+<body>
+<br><br>
+  <section class="partners-section">
+    <center> <h1>OUR SPONSORS AND PARTNERS</h1></center><br><br>
+    <div class="logo-grid">
+      <div class="logo-box">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioR4vCepcwhfMzLBTt9r0SpiUb7uePoFzjasRHb2ToitJNl1jOoh2-cgIcupZUU6b7QtVis8G4jsHnFO7P5PtcXUnj-0arkHmU7SDUiAlny4HGDc20s8oFqsxB4pUtf5nngmUvVy2DE6PHS6IvoGNabsXYLW1LDUV5Ao0dkz5_Wo2qbkEabfWIZcOMedRf/s320/1000091267.png" alt="FedEx Logo" />
+      </div>
+      <div class="logo-box">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBFr3J8a4otmNMk8AyZgEFn1AfTT_arOEHJlURPVxkDdzmijaBa1vtqOr4ElrXtGs5Za_fa-cRt0l3DfE17WkdicAUsTP3w9K86W-w5fUCWfNYFfxPq2M9nBOEg_xX1FMrCwQjSZ0qsjtYHlKrz1-FfKD2lhRvcviBMwBYG-0oqkz8tIBwj0aQKFqs09Ca/s320/1000091273.png" alt="EU Logo" />
+      </div>
+      <div class="logo-box">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHcpS_QHhCLC8F7NTLJjYqiA-QPbpDGB2pn2xGMM_bOK6Ls38HmDeZRStqe62lPNtHdtDuzggmR-PN9gaQJpX-n31gtwTub6jDDbL9-BDAIqs_W3gZfh0tvlUzyBxyaprSIiIwMVBp4L2I7yuiPz_EHXDjxDb2OQVkxwMD0vefnCVMRotCujvocpd3eLFx/s320/1000091042.png" alt="Adidas Logo" />
+      </div>
+      <div class="logo-box">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxD1xH9-Ni8xyGsBSAVZRkThiKI6sbfAnyR9K-4giWy0Uzk3YFH5-phaUSo4-Kg65-Wu4EITBYZAdxslFH6uRYcxdVJBsc9eO4t0suCltCmwXCQiYq6nPqJSt9MRQLp4HRhjT78Wd2FKnA2J8Qk22AwUPta-G0woM1t46GTZtZ0Sjg-slfUuqC8ULrZgwQ/s320/1000091047.png" alt="Hankook Logo" />
+      </div>
+    
+      <div class="logo-box">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEic2MR5DTY74Tt3Yc5Tkl_L4OIs0VminkoiPG0afXZQOr7VJ0NwRxH5cCjwCOWlEHj6aHjAzO4z-ASaRtnmIH3c7Ns3g9DL7WneVexFdvlm82Dk4uvn_iai1iZaOD5LMuFle3yegvh6sR2-eNF77hhVJXbT6WcULGCsg1XNrNG8Pt1lsf5kGhVMyRVyX9B5/s320/1000091268.png" alt="FedEx Logo" />
+      </div>
+     </div>
+     
+
+     <br><br> <br><br>
+  <style>
+  
+    .donate-btn {
+      background-color: #f34b4b; /* Red button background */
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 24px;
+      font-size: 16px;
+      text-transform: uppercase;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: background 0.3s ease;
+      text-decoration: none;
+    }
+  
+    .donate-btn:hover {
+      background-color: #d93b3b;
+    }
+  </style>
+  </head>
+  <body>
+  <center>
+  <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/ourpartners.html" class="donate-btn">
+    SEE MORE →
+  </a></center><BR><BR>
+  <br><br><br><br>
+  </section>
+
+</body>
+</html>
+
+<br><br>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</center></section>
+
+
+
+
+
+
+
+<br>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Footer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+    }
+
+    .site-footer {
+      background-color: #111;
+      color: #ffffff;
+      width: 100%;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: auto;
+      padding: 30px 20px;
+      gap: 20px;
+    }
+
+    .footer-column {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .footer-column h3 {
+      font-size: 16px;
+      margin-bottom: 8px;
+      border-bottom: 1px solid #ffffff;
+      padding-bottom: 5px;
+    }
+
+    .footer-column p,
+    .footer-column ul li a {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #ffffff;
+      text-decoration: none;
+      align-items: start;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      color: #fff;
+      font-size: 18px;
+      margin-right: 12px;
+      display: inline-block;
+    }
+
+    .footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
+  font-size: 13px;
+  border-top: 1px solid #ffffff;
+  color: #ccc;
+  position: relative;
+}
+
+.footer-bottom .designer {
+  position: absolute;
+  right: 20px;
+
+}
+
+.footer-bottom a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+    @media (max-width: 768px) {
+      .footer-content {
+        flex-direction: column;
+        padding: 20px 15px;
+        gap: 30px;
+      }
+
+      .footer-column {
+        min-width: 100%;
+      }
+
+      .footer-column h3 {
+        font-size: 15px;
+      }
+
+      .footer-column p,
+      .footer-column ul li a {
+        font-size: 13px;
+      }
+
+      .social-icons a {
+        font-size: 16px;
+        margin-right: 10px;
+      }
+
+      .footer-bottom {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+    padding: 10px;
+    position: static;
+  }
+
+  .footer-bottom .designer {
+    position: static;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>About Us</h3>
+        <p>
+          Khetan Sports Foundation is a non-profit organization dedicated to empowering young athletes across Nepal through access to quality training, infrastructure, and opportunities.
+        </p>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+         <li> <a href="https://furniturespot.github.io/Khetan-Sports-Foundation">Home</a></li>
+          <li><a href="https://furniturespot.github.io/Khetan-Sports-Foundation/aboutksf.html">About us</a></li>
+            <li><a href="https://furniturespot.github.io/Khetan-Sports-Foundation/sports.html">Sports</a></li>
+              <li>  <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/#partners">Our Sponsors & Partners</a></li>
+             
+                  <li><a href="https://furniturespot.github.io/Khetan-Sports-Foundation/campagins.html">Area of Focus</a></li>
+                    <li><a href="https://furniturespot.github.io/Khetan-Sports-Foundation/#impact">Impact</a></li>
+                    <li> <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p><strong>Email:</strong> khetansportsfoundation@gmail.com</p>
+        <p><strong>Phone:</strong> +977 9802057355</p><br>
+       <strong> <p>Social Welfare Council, Nepal</p>
+        <p>Affiliation No.: 58071</p></strong><br>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/khetansportsfoundation/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/khetansportsfoundation/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@khetansportsfoundation/" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://x.com/ksfnpl" target="_blank" aria-label="Twitter/X"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/khetansportsfoundation/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.threads.com/@khetansportsfoundation/" target="_blank" aria-label="Threads"><i class="fa-brands fa-threads"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2025 Khetan Sports Foundation. All rights reserved.</div>
+      <div class="designer"><a href="https://your-website.com" target="_blank">Website Designed by Ayan Das</a></div>
+    </div>
+    
+  </footer>
+
+</body>
+</html>
