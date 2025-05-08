@@ -14,7 +14,7 @@
     .fa-threads   { color: #000000; }
 
     :root {
-      --primary-red: #005aa7;
+      --primary-red: #005aa7;                                          
       --primary-blue: #ff0000;
       
     }
@@ -25,17 +25,17 @@
     }
 
     .navbar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px 20px;
-      background-color: var(--white);
-      box-shadow: 0 120px 250px rgba(0, 0, 0, 0.1);
-      position: relative;
-      border-bottom: #111;
-     
-     
-    }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: var(--white);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 10; /* Ensures header is above video */
+}
+
+
 
     .logo {
       display: flex;
@@ -198,19 +198,24 @@
 }
 
     }
-    .hero-video {
+    .hero-video-wrapper {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow outside video */
+}
+
+.hero-video {
   position: relative;
   width: 100%;
-  height: 60vh; /* Full viewport height */
+  height: 60vh;
   overflow: hidden;
 }
 
 .hero-video video {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the video fills the area like a background */
+  object-fit: cover;
   display: block;
 }
+
 
   </style>
 </head>
@@ -220,15 +225,14 @@
   </div>
     
   <div class="logo">
-    <div style="display: flex; align-items: center;">
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwg16zlSbAzrQZ8bBXlAsOpZR2rtWkGbL8obZN1MaKIhsoXVak8ekk7pmYe_UL7daMGG1e720bk6A8u2EDDA5w4CiVYT0zLLsStfZ3jd8WLjDd2L0yZX0ybyGkziuGx4wOZrNkC89LL-faIjdEBZn-pomXAWSoWVZllYdbYE2TXe3lRpfo4OjtqdJhN0zP/s320/1000091265.png" alt="Khetan-Sports-Foundation" style="height: 70px;" />
-  </div>
+    <a href="https://www.khetansportsfoundation.org" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwg16zlSbAzrQZ8bBXlAsOpZR2rtWkGbL8obZN1MaKIhsoXVak8ekk7pmYe_UL7daMGG1e720bk6A8u2EDDA5w4CiVYT0zLLsStfZ3jd8WLjDd2L0yZX0ybyGkziuGx4wOZrNkC89LL-faIjdEBZn-pomXAWSoWVZllYdbYE2TXe3lRpfo4OjtqdJhN0zP/s320/1000091265.png" alt="Khetan-Sports-Foundation" style="height: 70px;" />
       <div style="margin-left: 15px; font-family: Oswald; font-size: 22px; line-height: 1.2;">
-       <strong> <div>KHETAN
-        SPORTS FOUNDATION</div></strong>
+        <strong>KHETAN SPORTS FOUNDATION</strong>
       </div>
-    </div>
+    </a>
   </div>
+  
     <div class="menu-toggle" id="menu-toggle">
       <div></div>
       <div></div>
@@ -237,31 +241,31 @@
 
     <div class="menu-container" id="menu-container">
       <nav class="nav-links">
-        <a href="https://furniturespot.github.io/Khetan-Sports-Foundation">Home</a>
+        <a href="https://www.khetansportsfoundation.org/">Home</a>
         <div class="dropdown">
           <a href="#">Who we are</a>
           <div class="dropdown-content">
             
-            <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/aboutksf.html">About KSF</a>
-            <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/our%20mission.html">Our Mission</a>
-            <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/our%20vision.html">Our Vision</a>
-            <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/our%20team.html">Organization Structure</a>
-            <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/ourpartners.html">Our Sponsors & Partners</a>
+            <a href="https://www.khetansportsfoundation.org/aboutksf.html">About KSF</a>
+            <a href="https://www.khetansportsfoundation.org/our%20mission.html">Our Mission</a>
+            <a href="https://www.khetansportsfoundation.org/our%20vision.html">Our Vision</a>
+            <a href="https://www.khetansportsfoundation.org/our%20team.html">Organization Structure</a>
+            <a href="https://www.khetansportsfoundation.org/ourpartners.html">Our Sponsors & Partners</a>
           </div>
         </div>
         
         <div class="dropdown">
           <a href="#focus-area">Area of Focus </a>
           <div class="dropdown-content">
-            <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/sports.html">Sports</a>
-            <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/campagins.html">CSR Activity</a>
+            <a href="https://www.khetansportsfoundation.org/sports.html">Sports</a>
+            <a href="https://www.khetansportsfoundation.org/campaigns.html">CSR Activity</a>
           </div>
         </div>
        
        
-        <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/news.html">News</a>
-        <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/#impact">Impact</a>
-        <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/contact.html">Contact Us</a>
+        <a href="https://www.khetansportsfoundation.org/news.html">News</a>
+        <a href="https://www.khetansportsfoundation.org/#impact">Impact</a>
+        <a href="https://www.khetansportsfoundation.org/contact.html">Contact Us</a>
       </nav>
 
       <div class="support-button">
@@ -274,12 +278,15 @@
 
 
 
-  <section class="hero-video">
-    <video autoplay loop muted playsinline>
-      <source src="https://furniturespot.github.io/Khetan-Sports-Foundation/new.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+  <section class="hero-video-wrapper">
+    <div class="hero-video">
+      <video autoplay loop muted playsinline>
+        <source src="https://www.khetansportsfoundation.org/new.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
   </section>
+  
   
   
 <style>
@@ -310,6 +317,7 @@
       menuContainer.classList.toggle('active');
     });
   </script>
+
   </body>
   </html>
 
@@ -525,10 +533,12 @@
     }
 
     .site-footer {
-      background-color: #111;
-      color: #ffffff;
-      width: 100%;
-    }
+  background-color: #111;
+  color: #ffffff;
+  width: 100%;
+  box-shadow: 0 -5px 15px rgb(255, 0, 0); /* red shadow above */
+}
+
 
     .footer-content {
       display: flex;
@@ -598,6 +608,11 @@
   color: #ffffff;
   text-decoration: none;
 }
+.footer-bottom .designer a {
+  color: #1100ff !important;
+  text-decoration: underline !important;
+}
+
 
     @media (max-width: 768px) {
       .footer-content {
@@ -635,6 +650,9 @@
   .footer-bottom .designer {
     position: static;
   }
+  
+
+
 }
   </style>
 </head>
@@ -651,14 +669,14 @@
       <div class="footer-column">
         <h3>Quick Links</h3>
         <ul>
-         <li> <a href="https://furniturespot.github.io/Khetan-Sports-Foundation">Home</a></li>
-          <li><a href="https://furniturespot.github.io/Khetan-Sports-Foundation/aboutksf.html">About us</a></li>
-            <li><a href="https://furniturespot.github.io/Khetan-Sports-Foundation/sports.html">Sports</a></li>
-              <li>  <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/#partners">Our Sponsors & Partners</a></li>
+         <li> <a href="https://www.khetansportsfoundation.org/">Home</a></li>
+          <li><a href="https://www.khetansportsfoundation.org/aboutksf.html">About us</a></li>
+            <li><a href="https://www.khetansportsfoundation.org/sports.html">Sports</a></li>
+              <li>  <a href="https://www.khetansportsfoundation.org/ourpartners.html">Our Sponsors & Partners</a></li>
              
-                  <li><a href="https://furniturespot.github.io/Khetan-Sports-Foundation/campagins.html">Area of Focus</a></li>
-                    <li><a href="https://furniturespot.github.io/Khetan-Sports-Foundation/#impact">Impact</a></li>
-                    <li> <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/#contact">Contact Us</a></li>
+                  <li><a href="https://www.khetansportsfoundation.org/campaigns.html">Area of Focus</a></li>
+                    <li><a href="https://www.khetansportsfoundation.org/#impact">Impact</a></li>
+                    <li> <a href="https://www.khetansportsfoundation.org/contact.html">Contact Us</a></li>
         </ul>
       </div>
       <div class="footer-column">
@@ -679,7 +697,7 @@
     </div>
     <div class="footer-bottom">
       <div>© 2025 Khetan Sports Foundation. All rights reserved.</div>
-      <div class="designer"><a href="https://your-website.com" target="_blank">Website Designed by Ayan Das</a></div>
+      <div class="designer"><a href="https://wa.me/919907416727" target="_blank">WEBSITE &nbsp; DESIGNED &nbsp; by &nbsp; AYAN &nbsp; DAS</a></div>
     </div>
     
   </footer>
