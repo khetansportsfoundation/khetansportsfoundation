@@ -88,7 +88,7 @@
       font-weight: bold;
       text-decoration: none;
       transition: background-color 0.3s;
-      color: #ccc;
+      color: #ffffff;
     }
 
     .support-button a:hover {
@@ -269,7 +269,7 @@
       </nav>
 
       <div class="support-button">
-        <a href="#">Support our Initiative</a>
+        <a href="https://www.khetansportsfoundation.org/Supportus.html">Support our Initiative</a>
       </div>
     </div>
 
@@ -420,6 +420,138 @@
 
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Impact Section</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    .impact-section {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .impact-title {
+      font-size: 35px;
+      font-weight: bold;
+      color: #005aa7;
+      margin-bottom: 30px;
+
+      align-items: center;
+    }
+
+
+    .impact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .impact-box {
+      background: white;
+      border-radius: 12px;
+      padding: 30px 20px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .impact-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .impact-number {
+      font-size: 36px;
+      color: #ff0000;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .impact-text {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.5;
+      
+    }
+
+    @media (max-width: 600px) {
+      .impact-title {
+        font-size: 35px;
+        margin-bottom: 20px;
+      }
+
+      .impact-number {
+        font-size: 30px;
+      }
+
+      .impact-text {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="impact" id="impact">
+  <div class="impact-section">
+   <center> <h1 class="impact-title">IMPACT ACROSS NATION</h1></center><BR>
+    <div class="impact-grid">
+      <div class="impact-box">
+        <div class="impact-number" data-target="100">1</div>
+        <div class="impact-text">Sports Events supported throughout its inception.</div>
+      </div>
+      <div class="impact-box">
+        <div class="impact-number" data-target="500">1</div>
+        <div class="impact-text">National & International Players from Nepal covered through various campaigns.</div>
+      </div>
+      <div class="impact-box">
+        <div class="impact-number" data-target="30">1</div>
+        <div class="impact-text">Working with various District, State, National Sports Federations to support & promote sports in the country.</div>
+      </div>
+      <div class="impact-box">
+        <div class="impact-number" data-target="4">1</div>
+        <div class="impact-text">Working with Lions, Leo Welfare Clubs</div>
+      </div>
+      
+    </div>
+  </div>
+  <script>
+    const counters = document.querySelectorAll('.impact-number');
+  
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const speed = 50; // lower = faster
+  
+        const increment = Math.ceil(target / speed);
+  
+        if (count < target) {
+          counter.innerText = count + increment;
+          setTimeout(updateCount, 20);
+        } else {
+          counter.innerText = target + '+'; // Add + when finished
+        }
+      };
+  
+      updateCount();
+    });
+  </script>
+  
+</section>
+</body>
+</html>
 
 
 
@@ -564,7 +696,7 @@
     <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px; text-align: justify;">
       Our “Women in Sports” initiative supports girls and women across communities, fostering inclusivity and strength. We are deeply committed to supporting the cause by creating a platform that empowers women and girls to break barriers and achieve their fullest potential in the sporting world. Here’s how the foundation plays a crucial role in supporting this cause.
     </p>
-   <center> <a href="#" style="display: inline-block; background-color: #ef3f45; color: #ffffff; padding: 12px 20px; text-decoration: none; font-weight: bold; font-size: 1rem; border-radius: 4px;">
+   <center> <a href="https://www.khetansportsfoundation.org/Supportus.html" style="display: inline-block; background-color: #ef3f45; color: #ffffff; padding: 12px 20px; text-decoration: none; font-weight: bold; font-size: 1rem; border-radius: 4px;">
       DONATE US &nbsp; → 
     </a></center>
   </div>
@@ -591,12 +723,7 @@
 
 
 
-
-
-
-
-
-
+<br><br><br><br><br><br><br><br>
 
 
 
@@ -608,135 +735,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Impact Section</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cards Layout</title>
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-    }
+    
 
-    .impact-section {
-      max-width: 1200px;
-      margin: 60px auto;
-      padding: 0 20px;
-    }
-
-    .impact-title {
-      font-size: 35px;
-      font-weight: bold;
-      color: #005aa7;
-      margin-bottom: 30px;
-
-      align-items: center;
-    }
-
-
-    .impact-grid {
+    .cards-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
+      max-width: 1200px;
+      margin: auto;
     }
 
-    .impact-box {
-      background: white;
-      border-radius: 12px;
-      padding: 30px 20px;
-      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+    .card1 {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
       text-align: center;
       transition: transform 0.3s ease;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
     }
 
-    .impact-box:hover {
+    .card1:hover {
       transform: translateY(-5px);
     }
 
-    .impact-number {
-      font-size: 36px;
-      color: #ff0000;
-      font-weight: bold;
+    .card1 img {
+      width: 200px;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 8px;
       margin-bottom: 15px;
     }
 
-    .impact-text {
-      font-size: 16px;
+    .card1 p {
+      font-size: 15px;
+      line-height: 1.6;
       color: #333;
-      line-height: 1.5;
-      
-    }
-
-    @media (max-width: 600px) {
-      .impact-title {
-        font-size: 35px;
-        margin-bottom: 20px;
-      }
-
-      .impact-number {
-        font-size: 30px;
-      }
-
-      .impact-text {
-        font-size: 15px;
-      }
     }
   </style>
 </head>
 <body>
-  <section class="impact" id="impact">
-  <div class="impact-section">
-   <center> <h1 class="impact-title">IMPACT ACROSS NATION</h1></center><BR>
-    <div class="impact-grid">
-      <div class="impact-box">
-        <div class="impact-number" data-target="100">1</div>
-        <div class="impact-text">Sports Events supported throughout its inception.</div>
-      </div>
-      <div class="impact-box">
-        <div class="impact-number" data-target="500">1</div>
-        <div class="impact-text">National & International Players from Nepal covered through various campaigns.</div>
-      </div>
-      <div class="impact-box">
-        <div class="impact-number" data-target="30">1</div>
-        <div class="impact-text">Working with various District, State, National Sports Federations to support & promote sports in the country.</div>
-      </div>
-      <div class="impact-box">
-        <div class="impact-number" data-target="4">1</div>
-        <div class="impact-text">Working with Lions, Leo Welfare Clubs</div>
-      </div>
-      
+ <div class="partners-section"><h1>UPCOMING PROJECTS</h1></div>
+  <div class="cards-container">
+    <div class="card1">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMiGMj2mVBr6vtby_Q8nl15cAgEcD_HcoL9eNM8FhxlTsfzHTinnfQEiaDOFKLOSU_SRwqs07AucVzgzijLokWPhH4tAiuOPJR7S23Z9vBeKFav6BaY1-rUZmje7NznQ6hLmzo5ZCV4w_qUa6CoddJQN0esjtuNSzrBmvME6pPVA0fLwU9LYsOz1U25K8/s320/WhatsApp%20Image%202025-05-09%20at%2017.14.43_dae81e36.jpg" alt="Card Image 1" />
+      <p><strong>Project ID: KSF/2025/114</strong><br>
+Your support can transform lives and bring hope. Every contribution counts. Donate today and be a beacon of change.</p>
+    </div>
+    <div class="card1">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVFQtXVS162YXLQxL0M0VYieHZD46gefG0xU7uEP25_g56gxvKqnt3bdwLfrbGcpYAL5ls7omBiN2orzgyhC36o1LPumu3P-GQm1sSUefSlgGESNmiaesCYun0maNh-rvLqJLAACDhJMAwupp80q5daK4dzKKMLV6xtAeXkoBCHdqZivDrrvSu3QmobMI/s320/WhatsApp%20Image%202025-05-09%20at%2017.04.16_ff58b13c.jpg" alt="Card Image 2" />
+      <p> <strong>Project ID: KSF/2025/114</strong><br>
+Your support can transform lives and bring hope. Every contribution counts. Donate today and be a beacon of change.</p>
+    </div>
+    <div class="card1">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLJyNoDNy1DwTUqaxX-4kxaARYZ9CqS3eltURkwnvCB3i03UfUmv666RgyAA2lKhWgZtfhRqC7Dl9wIvutu3NmSTsOn2JrZp350zcP_F8Vp_jwCcgHRvwf7kik3dq9ifR0DmvBwKTPjevYJa9JnqDeispjxh6exO-DWUhw6CKUWO0Rd-SDwqXZz3Fgi9E/s320/WhatsApp%20Image%202025-05-09%20at%2017.15.04_5ac78030.jpg" alt="Card Image 3" />
+      <p><strong>Project ID: KSF/2025/112</strong><br>
+Your donations can bring hope and smiles.  We accept all kinds of donations, big and small, useful and heartfelt.</p>
+    </div>
+    <div class="card1">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirmUD_1qxiwHQZwoytWTQmnPotPeVfocIH2WfeO5ftOQ4sB9RA_zgaSsouTa7NNUSiwQKDyHMZAZY76KxG7x-GY4ghxQ3w53rj0aoPJwQA46zzoycDBTlKiOYFLVjlNptNs5r1uIZcVaBZhSsHlU1SU9h6jFHzXWZLZ-Kmd_sDLB-cR88maV09pwZWxwc/s320/WhatsApp%20Image%202025-05-09%20at%2017.15.41_8a935775.jpg" alt="Card Image 4" />
+      <p><strong>Project ID: KSF/2025/115</strong><br>
+Join Us in Our Mission to Help Those in Need. Unite for Change, Impact Lives. Make a difference!</p>
     </div>
   </div>
-  <script>
-    const counters = document.querySelectorAll('.impact-number');
-  
-    counters.forEach(counter => {
-      const updateCount = () => {
-        const target = +counter.getAttribute('data-target');
-        const count = +counter.innerText;
-        const speed = 50; // lower = faster
-  
-        const increment = Math.ceil(target / speed);
-  
-        if (count < target) {
-          counter.innerText = count + increment;
-          setTimeout(updateCount, 20);
-        } else {
-          counter.innerText = target + '+'; // Add + when finished
-        }
-      };
-  
-      updateCount();
-    });
-  </script>
-  
-</section>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1068,7 +1158,7 @@
   text-decoration: none;
 }
 .footer-bottom .designer a {
-  color: #1100ff !important;
+  color: #ffe600 !important;
   text-decoration: underline !important;
 }
 
@@ -1156,7 +1246,7 @@
     </div>
     <div class="footer-bottom">
       <div>© 2025 Khetan Sports Foundation. All rights reserved.</div>
-      <div class="designer"><a href="https://wa.me/919907416727" target="_blank">WEBSITE &nbsp; DESIGNED &nbsp; by &nbsp; ARKANE &nbsp; AGENCY</a></div>
+      <div class="designer"><a href="https://wa.me/919907416727" target="_blank">Website Designed by: ARKANE AGENCY</a></div>
     </div>
     
   </footer>
