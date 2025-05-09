@@ -88,7 +88,7 @@
       font-weight: bold;
       text-decoration: none;
       transition: background-color 0.3s;
-      color: #ccc;
+      color: #ffffff;
     }
 
     .support-button a:hover {
@@ -269,7 +269,7 @@
       </nav>
 
       <div class="support-button">
-        <a href="#">Support our Initiative</a>
+        <a href="https://www.khetansportsfoundation.org/Supportus.html">Support our Initiative</a>
       </div>
     </div>
 
@@ -377,10 +377,10 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      padding: 30px 15px;
-      max-width: 1200px;
+      padding: 20px 5px;
+      max-width: 1000px;
       margin: auto;
-      gap: 20px;
+      gap: 10px;
     }
 
     .form-section {
@@ -393,9 +393,9 @@
     }
     .map-section {
       flex: 1 1 45%;
-      max-width: 48%;
+      max-width: 350px;
       padding: 20px;
-      
+      background-color: #ffffff;
       border-radius: 8px;
       box-shadow: 0 12px 18px rgba(0, 0, 0, 0.253);
     }
@@ -452,38 +452,6 @@
     }
 
 
-    .social-connect {
-      margin-top: 40px;
-      text-align: center;
-      padding: 0 15px;
-    }
-
-    .social-connect h2 {
-      font-size: 24px;
-      margin-bottom: 15px;
-      color: #111;
-    }
-
-    .social-connect img {
-      width: 120px;
-      height: auto;
-      margin-bottom: 20px;
-    }
-
-    .social-icons {
-      text-align: center;
-    }
-
-    .social-icons a {
-      font-size: 52px;
-      margin: 0 12px;
-      display: inline-block;
-      transition: transform 0.3s;
-    }
-
-    .social-icons a:hover {
-      transform: scale(1.1);
-    }
 
     /* Brand colors */
     .fa-facebook-f { color: #1877f2; }
@@ -491,7 +459,7 @@
     .fa-youtube   { color: #ff0000; }
     .fa-twitter   { color: #1da1f2; }
     .fa-linkedin-in { color: #0a66c2; }
-    .fa-threads   { color: #000000; }
+    .fa-threads   { color: #ffffff; }
 
     @media (max-width: 768px) {
       .form-section h1, .map-section h1 {
@@ -503,14 +471,7 @@
         flex: 1 1 100%;
       }
 
-      .social-connect img {
-        width: 100px;
-      }
-
-      .social-icons a {
-        font-size: 30px;
-        margin: 0 10px;
-      }
+     
     }
   </style>
 </head>
@@ -546,94 +507,134 @@
 
       <!-- Map Section -->
       <div class="map-section">
-        <h1>SLIDER</h1>
-       <!-- Replace your map section with this slider container -->
-<section id="program-slider" style="padding: 40px 0; background-color: #f9f9f9;">
-  <div class="swiper">
-    <div class="swiper-wrapper">
+       
+      <style>
+ 
 
-      <!-- Slide 1 -->
-      <div class="swiper-slide">
-        <div class="slider-card">
-          <img src="C:\Users\ARKA\Desktop\Khetan Sports Foundation\IMG-20250428-WA0047.jpg" alt="Sports Event Organizer">
-         <center> <h3>Sports Event Organizer</h3></center>
-          <p>The organising committee can assist in the process of managing the myriad of tasks that need to be done.</p>
-        </div>
+    .slider-container {
+      max-width: 600px;
+      margin: auto;
+      
+      border-radius: 10px;
+     
+      overflow: hidden;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .slider-title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .slide {
+      display: none;
+    }
+
+    .slide.active {
+      display: block;
+    }
+
+    .slide img {
+      width: 290px;
+      max-height: 340px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .slide h3 {
+      margin: 15px 0 10px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .slide p {
+      font-size: 14px;
+      color: #444;
+      padding: 0 10px;
+    }
+
+    .dots {
+      margin-top: 15px;
+    }
+
+    .dot {
+      height: 10px;
+      width: 10px;
+      margin: 0 4px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.3s;
+      cursor: pointer;
+    }
+
+    .dot.active {
+      background-color: #333;
+    }
+  </style>
+
+
+  <div class="slider-container">
+    <div class="slider-title">UPCOMING PROJECTS</div>
+
+    <div class="slide active">
+     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMiGMj2mVBr6vtby_Q8nl15cAgEcD_HcoL9eNM8FhxlTsfzHTinnfQEiaDOFKLOSU_SRwqs07AucVzgzijLokWPhH4tAiuOPJR7S23Z9vBeKFav6BaY1-rUZmje7NznQ6hLmzo5ZCV4w_qUa6CoddJQN0esjtuNSzrBmvME6pPVA0fLwU9LYsOz1U25K8/s320/WhatsApp%20Image%202025-05-09%20at%2017.14.43_dae81e36.jpg" alt="Card Image 1" />
+      <br><br><h3><strong>Project ID: KSF/2025/114</h3></strong><br>
+<h4>Your support can transform lives and bring hope. Every contribution counts. Donate today and be a beacon of change.</h4>
+     </div>
+
+
+
+
+    <div class="slide">
+     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVFQtXVS162YXLQxL0M0VYieHZD46gefG0xU7uEP25_g56gxvKqnt3bdwLfrbGcpYAL5ls7omBiN2orzgyhC36o1LPumu3P-GQm1sSUefSlgGESNmiaesCYun0maNh-rvLqJLAACDhJMAwupp80q5daK4dzKKMLV6xtAeXkoBCHdqZivDrrvSu3QmobMI/s320/WhatsApp%20Image%202025-05-09%20at%2017.04.16_ff58b13c.jpg" alt="Card Image 2" />
+      <br><br><h3><strong>Project ID: KSF/2025/114</strong></h3><br>
+<h4>Your support can transform lives and bring hope. Every contribution counts. Donate today and be a beacon of change.</h4>
       </div>
 
-      <!-- Slide 2 -->
-      <div class="swiper-slide">
-        <div class="slider-card">
-          <img src="images/slide2.jpg" alt="Coach Management">
-          <h3>Coach Management</h3>
-          <p>We ensure professional coaches are available to train and mentor players of all levels.</p>
-        </div>
-      </div>
 
-      <!-- Slide 3 -->
-      <div class="swiper-slide">
-        <div class="slider-card">
-          <img src="images/slide3.jpg" alt="Training Camps">
-          <h3>Training Camps</h3>
-          <p>Organizing camps that enhance skills, fitness, and team-building among athletes.</p>
-        </div>
-      </div>
 
+
+<div class="slide">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLJyNoDNy1DwTUqaxX-4kxaARYZ9CqS3eltURkwnvCB3i03UfUmv666RgyAA2lKhWgZtfhRqC7Dl9wIvutu3NmSTsOn2JrZp350zcP_F8Vp_jwCcgHRvwf7kik3dq9ifR0DmvBwKTPjevYJa9JnqDeispjxh6exO-DWUhw6CKUWO0Rd-SDwqXZz3Fgi9E/s320/WhatsApp%20Image%202025-05-09%20at%2017.15.04_5ac78030.jpg" alt="Card Image 3" />
+      <br><br><h3><strong>Project ID: KSF/2025/112</strong></h3><br>
+<h4>Your donations can bring hope and smiles.  We accept all kinds of donations, big and small, useful and heartfelt.</h4>
+     </div>
+
+
+
+
+<div class="slide">
+     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirmUD_1qxiwHQZwoytWTQmnPotPeVfocIH2WfeO5ftOQ4sB9RA_zgaSsouTa7NNUSiwQKDyHMZAZY76KxG7x-GY4ghxQ3w53rj0aoPJwQA46zzoycDBTlKiOYFLVjlNptNs5r1uIZcVaBZhSsHlU1SU9h6jFHzXWZLZ-Kmd_sDLB-cR88maV09pwZWxwc/s320/WhatsApp%20Image%202025-05-09%20at%2017.15.41_8a935775.jpg" alt="Card Image 4" />
+      <br><br><h3><strong>Project ID: KSF/2025/115</strong></h3><br>
+<h4>Join Us in Our Mission to Help Those in Need. Unite for Change, Impact Lives. Make a difference!</h4>
     </div>
 
-    <!-- Navigation and Pagination -->
-   <br> <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+
+
+
+
+    <div class="dots">
+      <span class="dot active" onclick="currentSlide(0)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+       <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
   </div>
-</section>
 
-<!-- Add Swiper Styles in your main <head> -->
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
 
-<!-- Add Swiper JS just before your closing </body> -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-  const swiper = new Swiper('.swiper', {
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 20,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
+    function currentSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+        dots[i].classList.toggle('active', i === index);
+      });
     }
-  });
-</script>
-
-<!-- Optional styles for the cards -->
-<style>
-  
-
-  .slider-card img {
-    width: 100%;
-    display: block;
-  }
-
-  .slider-card h3 {
-    margin: 15px 0 5px;
-    font-size: 18px;
-    font-weight: bold;
-  }
-
-  .slider-card p {
-    font-size: 14px;
-    color: #000000b3;
-    padding: 0 15px 15px;
-  }
-</style>
-
+  </script>
       
       
       </div>
@@ -691,7 +692,9 @@
 
 
 
-<!DOCTYPE html>
+
+
+   <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -754,11 +757,11 @@
       padding: 0;
     }
 
-    .social-icons1 {
+    .social-icons {
       margin-top: 10px;
     }
 
-    .social-icons1 a {
+    .social-icons a {
       color: #fff;
       font-size: 18px;
       margin-right: 12px;
@@ -787,7 +790,7 @@
   text-decoration: none;
 }
 .footer-bottom .designer a {
-  color: #1100ff !important;
+  color: #ffe600 !important;
   text-decoration: underline !important;
 }
 
@@ -812,7 +815,7 @@
         font-size: 13px;
       }
 
-      .social-icons1 a {
+      .social-icons a {
         font-size: 16px;
         margin-right: 10px;
       }
@@ -863,7 +866,7 @@
         <p><strong>Phone:</strong> +977 9802057355</p><br>
        <strong> <p>Social Welfare Council, Nepal</p>
         <p>Affiliation No.: 58071</p></strong><br>
-        <div class="social-icons1">
+        <div class="social-icons">
           <a href="https://www.facebook.com/khetansportsfoundation/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
           <a href="https://www.instagram.com/khetansportsfoundation/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
           <a href="https://www.youtube.com/@khetansportsfoundation/" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
@@ -875,7 +878,7 @@
     </div>
     <div class="footer-bottom">
       <div>© 2025 Khetan Sports Foundation. All rights reserved.</div>
-      <div class="designer"><a href="https://wa.me/919907416727" target="_blank">WEBSITE &nbsp; DESIGNED &nbsp; by &nbsp; ARKANE &nbsp; AGENCY</a></div>
+      <div class="designer"><a href="https://wa.me/919907416727" target="_blank">Website Designed by: ARKANE AGENCY</a></div>
     </div>
     
   </footer>
